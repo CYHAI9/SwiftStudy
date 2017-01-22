@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		325484A11E2C5E9100043725 /* kvoBlickedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325484A01E2C5E9100043725 /* kvoBlickedVC.swift */; };
+		325484A31E2F435900043725 /* kvcPer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325484A21E2F435900043725 /* kvcPer.swift */; };
+		325484A61E2F499700043725 /* functionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325484A51E2F499700043725 /* functionVC.swift */; };
+		325484AD1E2F4CE600043725 /* UIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325484AC1E2F4CE600043725 /* UIVC.swift */; };
+		325484AF1E2F545900043725 /* LBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325484AE1E2F545900043725 /* LBVC.swift */; };
+		325484B11E2F5D7F00043725 /* 通用图标.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 325484B01E2F5D7F00043725 /* 通用图标.jpg */; };
+		325484B31E2F5DA800043725 /* ImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325484B21E2F5DA800043725 /* ImageVC.swift */; };
+		325484B51E2F5F4100043725 /* scrollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325484B41E2F5F4100043725 /* scrollVC.swift */; };
+		325484B71E30558A00043725 /* tableviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325484B61E30558A00043725 /* tableviewVC.swift */; };
+		325484BA1E305B4700043725 /* Cell01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325484B91E305B4700043725 /* Cell01.swift */; };
 		32A971681E13A70D006D1E51 /* calculationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A971671E13A70D006D1E51 /* calculationsVC.swift */; };
 		32A9716B1E13C150006D1E51 /* BlockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A9716A1E13C150006D1E51 /* BlockVC.swift */; };
 		32A9716E1E14B098006D1E51 /* ProNotifiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A9716D1E14B098006D1E51 /* ProNotifiVC.swift */; };
@@ -16,9 +26,20 @@
 		32AF98D61E135A0F00602DF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32AF98D51E135A0F00602DF6 /* Assets.xcassets */; };
 		32AF98D91E135A0F00602DF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32AF98D71E135A0F00602DF6 /* LaunchScreen.storyboard */; };
 		32AF98E21E135A9500602DF6 /* BaseVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF98E11E135A9500602DF6 /* BaseVc.swift */; };
+		32E19CE91E15127700B77504 /* FoWhileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E19CE81E15127700B77504 /* FoWhileVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		325484A01E2C5E9100043725 /* kvoBlickedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kvoBlickedVC.swift; sourceTree = "<group>"; };
+		325484A21E2F435900043725 /* kvcPer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kvcPer.swift; sourceTree = "<group>"; };
+		325484A51E2F499700043725 /* functionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = functionVC.swift; sourceTree = "<group>"; };
+		325484AC1E2F4CE600043725 /* UIVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVC.swift; sourceTree = "<group>"; };
+		325484AE1E2F545900043725 /* LBVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBVC.swift; sourceTree = "<group>"; };
+		325484B01E2F5D7F00043725 /* 通用图标.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "通用图标.jpg"; sourceTree = "<group>"; };
+		325484B21E2F5DA800043725 /* ImageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageVC.swift; sourceTree = "<group>"; };
+		325484B41E2F5F4100043725 /* scrollVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = scrollVC.swift; sourceTree = "<group>"; };
+		325484B61E30558A00043725 /* tableviewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableviewVC.swift; sourceTree = "<group>"; };
+		325484B91E305B4700043725 /* Cell01.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell01.swift; sourceTree = "<group>"; };
 		32A971671E13A70D006D1E51 /* calculationsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calculationsVC.swift; sourceTree = "<group>"; };
 		32A9716A1E13C150006D1E51 /* BlockVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockVC.swift; sourceTree = "<group>"; };
 		32A9716D1E14B098006D1E51 /* ProNotifiVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProNotifiVC.swift; sourceTree = "<group>"; };
@@ -30,6 +51,7 @@
 		32AF98D81E135A0F00602DF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32AF98DA1E135A0F00602DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32AF98E11E135A9500602DF6 /* BaseVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVc.swift; sourceTree = "<group>"; };
+		32E19CE81E15127700B77504 /* FoWhileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoWhileVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +65,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3254849F1E2C5E0B00043725 /* 监听与响应 */ = {
+			isa = PBXGroup;
+			children = (
+				325484A01E2C5E9100043725 /* kvoBlickedVC.swift */,
+				325484A21E2F435900043725 /* kvcPer.swift */,
+			);
+			path = "监听与响应";
+			sourceTree = "<group>";
+		};
+		325484A41E2F497500043725 /* 函数 */ = {
+			isa = PBXGroup;
+			children = (
+				325484A51E2F499700043725 /* functionVC.swift */,
+			);
+			path = "函数";
+			sourceTree = "<group>";
+		};
+		325484A71E2F4C3400043725 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				325484A81E2F4CAF00043725 /* LableAndButton */,
+				325484A91E2F4CAF00043725 /* Scrollview */,
+				325484AA1E2F4CAF00043725 /* tableview */,
+				325484AB1E2F4CAF00043725 /* UIimageview */,
+				325484AC1E2F4CE600043725 /* UIVC.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		325484A81E2F4CAF00043725 /* LableAndButton */ = {
+			isa = PBXGroup;
+			children = (
+				325484AE1E2F545900043725 /* LBVC.swift */,
+			);
+			path = LableAndButton;
+			sourceTree = "<group>";
+		};
+		325484A91E2F4CAF00043725 /* Scrollview */ = {
+			isa = PBXGroup;
+			children = (
+				325484B41E2F5F4100043725 /* scrollVC.swift */,
+			);
+			path = Scrollview;
+			sourceTree = "<group>";
+		};
+		325484AA1E2F4CAF00043725 /* tableview */ = {
+			isa = PBXGroup;
+			children = (
+				325484B81E3055A000043725 /* view */,
+				325484B61E30558A00043725 /* tableviewVC.swift */,
+			);
+			path = tableview;
+			sourceTree = "<group>";
+		};
+		325484AB1E2F4CAF00043725 /* UIimageview */ = {
+			isa = PBXGroup;
+			children = (
+				325484B21E2F5DA800043725 /* ImageVC.swift */,
+			);
+			path = UIimageview;
+			sourceTree = "<group>";
+		};
+		325484B81E3055A000043725 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				325484B91E305B4700043725 /* Cell01.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		32A971661E13A6C4006D1E51 /* 运算 */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +178,11 @@
 		32AF98CD1E135A0F00602DF6 /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				325484B01E2F5D7F00043725 /* 通用图标.jpg */,
+				325484A71E2F4C3400043725 /* UI */,
+				325484A41E2F497500043725 /* 函数 */,
+				3254849F1E2C5E0B00043725 /* 监听与响应 */,
+				32E19CE71E15124600B77504 /* 控制流 */,
 				32A9716C1E14B033006D1E51 /* 协议与通知 */,
 				32A971691E13C13F006D1E51 /* 闭包 */,
 				32A971661E13A6C4006D1E51 /* 运算 */,
@@ -106,6 +203,14 @@
 				32AF98E11E135A9500602DF6 /* BaseVc.swift */,
 			);
 			path = "基础";
+			sourceTree = "<group>";
+		};
+		32E19CE71E15124600B77504 /* 控制流 */ = {
+			isa = PBXGroup;
+			children = (
+				32E19CE81E15127700B77504 /* FoWhileVC.swift */,
+			);
+			path = "控制流";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +275,7 @@
 			files = (
 				32AF98D91E135A0F00602DF6 /* LaunchScreen.storyboard in Resources */,
 				32AF98D61E135A0F00602DF6 /* Assets.xcassets in Resources */,
+				325484B11E2F5D7F00043725 /* 通用图标.jpg in Resources */,
 				32AF98D41E135A0F00602DF6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,11 +287,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				325484AF1E2F545900043725 /* LBVC.swift in Sources */,
+				325484A31E2F435900043725 /* kvcPer.swift in Sources */,
+				32E19CE91E15127700B77504 /* FoWhileVC.swift in Sources */,
+				325484B31E2F5DA800043725 /* ImageVC.swift in Sources */,
+				325484B71E30558A00043725 /* tableviewVC.swift in Sources */,
 				32AF98D11E135A0F00602DF6 /* ViewController.swift in Sources */,
 				32AF98E21E135A9500602DF6 /* BaseVc.swift in Sources */,
 				32A971681E13A70D006D1E51 /* calculationsVC.swift in Sources */,
+				325484BA1E305B4700043725 /* Cell01.swift in Sources */,
+				325484B51E2F5F4100043725 /* scrollVC.swift in Sources */,
+				325484A11E2C5E9100043725 /* kvoBlickedVC.swift in Sources */,
 				32AF98CF1E135A0F00602DF6 /* AppDelegate.swift in Sources */,
 				32A9716B1E13C150006D1E51 /* BlockVC.swift in Sources */,
+				325484A61E2F499700043725 /* functionVC.swift in Sources */,
+				325484AD1E2F4CE600043725 /* UIVC.swift in Sources */,
 				32A9716E1E14B098006D1E51 /* ProNotifiVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

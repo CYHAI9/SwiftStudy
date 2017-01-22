@@ -37,7 +37,6 @@ class ProNotifiVC: UIViewController {
         let pro3 = protocol03()
         pro3.protocol01(str: "结构体2次传入")
         
-        
     }
 
     func test01() -> Void {

@@ -28,6 +28,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         NotificationCenter.default.addObserver(self, selector:#selector(test1(notification:)), name: NSNotification.Name("test1"), object: nil)
     }
     
+    /// 通知
+    ///
+    /// - Parameter notification: <#notification description#>
     func test1(notification:NSNotification) -> Void {
         let userinfo = notification.userInfo as![String:AnyObject]
         
@@ -42,7 +45,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     func datasource() -> Void {
-        self.mydatasource = NSMutableArray.init(array: ["基础","运算符","字符串","协议与通知","控制流","函数","闭包"])
+        self.mydatasource = NSMutableArray.init(array: ["基础","运算符","监听与响应","协议与通知","控制流","函数","闭包","UI"])
     }
     
      func numberOfSections(in tableView: UITableView) -> Int {
@@ -78,7 +81,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             
         break
         case 2:
-
+            let kvc = kvoBlickedVC()
+            self.navigationController?.pushViewController(kvc, animated: true)
+            
         break
         case 3:
             let pvc = ProNotifiVC()
@@ -89,9 +94,14 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             self.navigationController?.pushViewController(pvc, animated: true)
         break
         case 4:
+            let fvc = FoWhileVC()
+            self.navigationController?.pushViewController(fvc, animated: true)
             
         break
         case 5:
+           let fun01 = functionVC()
+           fun01.function01()
+           functionVC.function02()
             
         break
         case 6:
@@ -121,7 +131,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             self.navigationController?.pushViewController(blvc, animated:true)
         break
         case 7:
-            
+            let uvc = UIVC()
+            self.navigationController?.pushViewController(uvc, animated:true)
         break
         default: break
             
