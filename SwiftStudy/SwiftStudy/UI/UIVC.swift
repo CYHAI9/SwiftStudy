@@ -19,7 +19,7 @@ class UIVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     }
     
     func createDataSource() -> Void {
-        self.datasource = NSMutableArray.init(array: ["Label与Button","UIImageview","Scrollview","Tableview"])
+        self.datasource = NSMutableArray.init(array: ["Label与Button","UIImageview","Scrollview","Tableview","collectionview"])
     }
     
     func createrUI() -> Void {
@@ -67,6 +67,9 @@ class UIVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
             self.navigationController?.pushViewController(tvc, animated: true)
             
             break
+        case 4:
+            let cvc = CollectionviewController()
+            self.navigationController?.pushViewController(cvc, animated: true);
         default: break
         
         }

@@ -66,7 +66,6 @@ class BaseVc: UIViewController {
         print("转字符串01:",numstr)
         print("转字符串02",numstr02)
         print("double类型：\(Dvalue02)\n字符串转Int：\(valueNum)")
-
         
     }
     
