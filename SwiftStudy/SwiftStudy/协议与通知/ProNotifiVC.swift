@@ -13,7 +13,6 @@ protocol myDelegate {
     func protocol01(str:String) ->Void
     var protocol02:String{get set}
     
-    
 }
 struct protocol03: myDelegate {
     
@@ -22,9 +21,7 @@ struct protocol03: myDelegate {
         print(str);
         
     }
-    
     var protocol02: String = "喜啦啦啦啦"
-    
 }
 
 class ProNotifiVC: UIViewController {
