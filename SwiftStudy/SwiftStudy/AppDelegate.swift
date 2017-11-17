@@ -12,7 +12,6 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
@@ -25,8 +24,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let vc = ViewController()
         //因为nvc从属的UINavigationController并未存在，所以需要init
         let nvc = UINavigationController.init(rootViewController:vc)
+        let vc02:ViewController02 = ViewController02();
+        let nvc02 = UINavigationController.init(rootViewController: vc02)
         
-        self.window?.rootViewController = nvc
+        let tabbar:TabBarController = TabBarController()
+        tabbar.addChildViewController(nvc)
+        tabbar.addChildViewController(nvc02)
+        
+        nvc.tabBarItem.title = "第一个"
+        nvc02.tabBarItem.title = "第二个"
+        
+        vc.navigationItem.title = "One"
+        vc02.navigationItem.title = "Two"
+        
+        self.window?.rootViewController = tabbar
         
         return true
     }

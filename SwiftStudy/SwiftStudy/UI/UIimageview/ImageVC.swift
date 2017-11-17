@@ -24,5 +24,8 @@ class ImageVC: UIViewController {
         
     }
     
+    func testColor(mcolor:UIColor) -> Void {
+        
+    }
     
 }

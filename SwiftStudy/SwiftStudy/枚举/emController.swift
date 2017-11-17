@@ -47,7 +47,6 @@ class emController: UIViewController {
         case enumStudy.enumThree:
             print("枚举03")
             break
-         
         }
         
         if self.enumexample == .enumone {

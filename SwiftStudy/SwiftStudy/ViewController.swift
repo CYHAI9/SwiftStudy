@@ -45,7 +45,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     func datasource() -> Void {
-        self.mydatasource = NSMutableArray.init(array: ["基础","运算符","监听与响应","协议与通知","控制流","函数","闭包","UI","枚举"])
+        self.mydatasource = NSMutableArray.init(array: ["基础","运算符","监听与响应","协议与通知","控制流","函数","闭包","UI","枚举","网络请求"])
     }
     
      func numberOfSections(in tableView: UITableView) -> Int {
@@ -138,7 +138,10 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             let uvc = emController()
             self.navigationController?.pushViewController(uvc, animated:true)
             break
-            
+        case 9:
+            let uvc = HttpViewController()
+            self.navigationController?.pushViewController(uvc, animated:true)
+            break
         default: break
             
         }
