@@ -18,7 +18,6 @@ class ViewController02: UIViewController {
 
     
     }
-
     override func viewWillAppear(_ animated: Bool) {
         
         let action = UIAlertAction.init(title: "确定", style:.default) { (alAction) in
@@ -33,6 +32,7 @@ class ViewController02: UIViewController {
         self.present(alterView, animated: true) {
          //do something
         }
+        
     }
 
 }

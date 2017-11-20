@@ -17,7 +17,7 @@ class Cell01: UITableViewCell {
     class func cellinitWith(tableview:UITableView,indexpath:IndexPath) -> UITableViewCell {
   
       var cell = tableview.dequeueReusableCell(withIdentifier: "cellid01")
-        if (cell != Cell01()) {
+        if (cell == nil) {
             
             cell = Cell01.init(style: .default, reuseIdentifier: "cellid01")
            (cell as! Cell01).cellUI()
@@ -28,7 +28,7 @@ class Cell01: UITableViewCell {
     
     func cellUI() -> Void {
        
-        let label01 = UILabel.init(frame:CGRect(origin:CGPoint(x:0,y:0),size:CGSize(width:200, height:20)))
+        let label01 = UILabel.init(frame:CGRect(origin:CGPoint(x:0,y:0),size:CGSize(width:200, height:self.contentView.frame.size.height - 1)))
         label01.backgroundColor = UIColor.orange
         self.contentView.addSubview(label01)
         label01.text = "xxxxxeeeee==="
