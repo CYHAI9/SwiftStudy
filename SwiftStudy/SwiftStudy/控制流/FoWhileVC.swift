@@ -16,6 +16,7 @@ class FoWhileVC: UIViewController {
         self.forTest01()
         self.forTest02()
         self.whileTest01()
+        self.forAndenumTest02()
     }
 
     func forTest01() -> Void {
@@ -46,5 +47,12 @@ class FoWhileVC: UIViewController {
             i = i + 1;
         }
         
+    }
+    
+    func forAndenumTest02() -> Void {
+        let arr = ["字符串01","字符串02","字符串03","字符串04"];
+        for (index,str) in arr.enumerated() {
+            print("下标：\(index)----元素：\(str)")
+        }
     }
 }

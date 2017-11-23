@@ -101,8 +101,14 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         case 5:
            let fun01 = functionVC()
            fun01.function01()
+           fun01.functionWithParam(str: "带参数的函数")
+           var str = fun01.functionWithParamAndreturn(str: "返回函数")
+           print(str)
            functionVC.function02()
-            
+           functionVC.functionWithParam(str: "带参数的类函数")
+           str = functionVC.functionWithParamAndreturn(str: "带参数且返回函数")
+           print(str)
+           
         break
         case 6:
             let blvc = BlockVC()

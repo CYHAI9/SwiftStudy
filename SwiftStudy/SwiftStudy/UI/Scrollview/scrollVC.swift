@@ -21,6 +21,8 @@ class scrollVC: UIViewController,UIScrollViewDelegate {
         self.scrollview01.contentSize = CGSize(width:3 * self.view.frame.size.width, height:0)
         self.scrollview01.contentOffset = CGPoint(x:0,y:0)
         self.view.addSubview(self.scrollview01)
+//        showsVerticalScrollIndicator 竖直方向的滚动条 showsHorizontalScrollIndicator水平方向的滚动条
+        self.scrollview01.showsHorizontalScrollIndicator = false
         for i in (0...2){
             let imgeview01 = UIImageView.init(frame: CGRect(origin:CGPoint(x:(CGFloat(i)*self.view.frame.size.width),y:0),size:CGSize(width:self.view.frame.size.width, height:self.view.frame.size.width)))
             imgeview01.image = UIImage.init(imageLiteralResourceName: "通用图标.jpg")

@@ -19,10 +19,31 @@ class functionVC: UIViewController {
         print("这个是对象函数")
     }
     
+    func functionWithParam(str:String) -> Void {
+        
+        print(str)
+    }
+    
+    func functionWithParamAndreturn(str:String) -> String {
+        
+        return str
+    }
+    
+    
    class func function02() -> Void {
     
         print("这是类函数")
     
+    }
+    
+    class func functionWithParam(str:String) -> Void {
+        
+        print(str)
+    }
+    
+    class func functionWithParamAndreturn(str:String) -> String {
+        
+        return str
     }
 
 }
