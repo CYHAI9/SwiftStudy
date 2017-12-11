@@ -36,6 +36,7 @@
 		32C679A81FBD85CD00A99FF0 /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C679A71FBD85CD00A99FF0 /* HttpManager.swift */; };
 		32C679AA1FBEC84100A99FF0 /* Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C679A91FBEC84100A99FF0 /* Params.swift */; };
 		32C679AD1FC2692B00A99FF0 /* NSContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C679AC1FC2692B00A99FF0 /* NSContainerViewController.swift */; };
+		32CDA47E1FD62CC500BC1A08 /* BaseMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CDA47D1FD62CC500BC1A08 /* BaseMapViewController.swift */; };
 		32E19CE91E15127700B77504 /* FoWhileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E19CE81E15127700B77504 /* FoWhileVC.swift */; };
 		84632F4E07E939418BCD51A0 /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A57A555ECA0E844E4362E3D /* Pods_SwiftStudy.framework */; };
 /* End PBXBuildFile section */
@@ -73,6 +74,7 @@
 		32C679A71FBD85CD00A99FF0 /* HttpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
 		32C679A91FBEC84100A99FF0 /* Params.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Params.swift; sourceTree = "<group>"; };
 		32C679AC1FC2692B00A99FF0 /* NSContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSContainerViewController.swift; sourceTree = "<group>"; };
+		32CDA47D1FD62CC500BC1A08 /* BaseMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMapViewController.swift; sourceTree = "<group>"; };
 		32E19CE81E15127700B77504 /* FoWhileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoWhileVC.swift; sourceTree = "<group>"; };
 		5A57A555ECA0E844E4362E3D /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0BEA5711B01AAD5A066B557 /* Pods-SwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				325484B01E2F5D7F00043725 /* 通用图标.jpg */,
+				32CDA47A1FD62C7000BC1A08 /* 地图 */,
 				32C679AB1FC268C100A99FF0 /* 容器类 */,
 				32C679A31FBD84A900A99FF0 /* 网络 */,
 				328551BD1F55373D00D48E86 /* 枚举 */,
@@ -298,6 +301,14 @@
 			path = "容器类";
 			sourceTree = "<group>";
 		};
+		32CDA47A1FD62C7000BC1A08 /* 地图 */ = {
+			isa = PBXGroup;
+			children = (
+				32CDA47D1FD62CC500BC1A08 /* BaseMapViewController.swift */,
+			);
+			path = "地图";
+			sourceTree = "<group>";
+		};
 		32E19CE71E15124600B77504 /* 控制流 */ = {
 			isa = PBXGroup;
 			children = (
@@ -350,7 +361,7 @@
 				TargetAttributes = {
 					32AF98CA1E135A0F00602DF6 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = Q73R372BNT;
+						DevelopmentTeam = X2V7RGB29W;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -467,6 +478,7 @@
 				32C679A51FBD84D200A99FF0 /* HttpViewController.swift in Sources */,
 				32AF98CF1E135A0F00602DF6 /* AppDelegate.swift in Sources */,
 				328551BA1F5502CE00D48E86 /* collectionLayout.swift in Sources */,
+				32CDA47E1FD62CC500BC1A08 /* BaseMapViewController.swift in Sources */,
 				32A9716B1E13C150006D1E51 /* BlockVC.swift in Sources */,
 				325484A61E2F499700043725 /* functionVC.swift in Sources */,
 				328551C11F5686DC00D48E86 /* TabBarController.swift in Sources */,
@@ -595,7 +607,7 @@
 			baseConfigurationReference = 2FA66344CC4E5172EC316478 /* Pods-SwiftStudy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Q73R372BNT;
+				DEVELOPMENT_TEAM = X2V7RGB29W;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = SwiftStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -610,7 +622,7 @@
 			baseConfigurationReference = A0BEA5711B01AAD5A066B557 /* Pods-SwiftStudy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Q73R372BNT;
+				DEVELOPMENT_TEAM = X2V7RGB29W;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = SwiftStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -45,7 +45,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     func datasource() -> Void {
-        self.mydatasource = NSMutableArray.init(array: ["基础","运算符","监听与响应","协议与通知","控制流","函数","闭包","UI","枚举","网络请求","容器类"])
+        self.mydatasource = NSMutableArray.init(array: ["基础","运算符","监听与响应","协议与通知","控制流","函数","闭包","UI","枚举","网络请求","容器类","地图"])
     }
     
      func numberOfSections(in tableView: UITableView) -> Int {
@@ -115,6 +115,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             blvc.block01(str:"传值", block: { (str) in
                 
                 print("读取block回调的东西\(str)")
+                
             })
             
             blvc.block02 = {
@@ -132,6 +133,11 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             
             blvc.block04(str:"第四种block使用", block: { (str) in
                 print(str)
+            })
+            
+            blvc.block06({ (str) in
+                print(str)
+                
             })
             
             self.navigationController?.pushViewController(blvc, animated:true)
@@ -152,6 +158,10 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             let uvc = NSContainerViewController()
             self.navigationController?.pushViewController(uvc, animated:true)
             break
+        case 11:
+            let uvc = BaseMapViewController()
+            self.navigationController?.pushViewController(uvc, animated:true)
+            break
         default: break
             
         }
@@ -166,7 +176,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         print("协议：",str)
         
     }
-  
     
 }
 

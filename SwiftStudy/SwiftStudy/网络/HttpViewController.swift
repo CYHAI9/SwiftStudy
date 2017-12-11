@@ -35,11 +35,15 @@ class HttpViewController: UIViewController {
                 
             }
             
-        } else
+        } else if(run == 0)
         {
             AlamofireHttp()
 
+            
+        }else
+        {
         }
+        
         
 }
 //TODO:第三方网络请求
@@ -52,8 +56,8 @@ class HttpViewController: UIViewController {
             print("第三方请求的返回数据",response);
         }
         
-    }
-    
+
+}
     
 }
 
