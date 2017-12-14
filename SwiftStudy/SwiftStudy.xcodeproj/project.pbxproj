@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3209095F1FE2092F0076EEF2 /* AsyncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3209095E1FE2092F0076EEF2 /* AsyncViewController.swift */; };
 		325484A11E2C5E9100043725 /* kvoBlickedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325484A01E2C5E9100043725 /* kvoBlickedVC.swift */; };
 		325484A31E2F435900043725 /* kvcPer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325484A21E2F435900043725 /* kvcPer.swift */; };
 		325484A61E2F499700043725 /* functionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325484A51E2F499700043725 /* functionVC.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		2FA66344CC4E5172EC316478 /* Pods-SwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
+		3209095E1FE2092F0076EEF2 /* AsyncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncViewController.swift; sourceTree = "<group>"; };
 		325484A01E2C5E9100043725 /* kvoBlickedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kvoBlickedVC.swift; sourceTree = "<group>"; };
 		325484A21E2F435900043725 /* kvcPer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kvcPer.swift; sourceTree = "<group>"; };
 		325484A51E2F499700043725 /* functionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = functionVC.swift; sourceTree = "<group>"; };
@@ -98,6 +100,14 @@
 				5A57A555ECA0E844E4362E3D /* Pods_SwiftStudy.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3209095D1FE206540076EEF2 /* 多线程 */ = {
+			isa = PBXGroup;
+			children = (
+				3209095E1FE2092F0076EEF2 /* AsyncViewController.swift */,
+			);
+			path = "多线程";
 			sourceTree = "<group>";
 		};
 		3254849F1E2C5E0B00043725 /* 监听与响应 */ = {
@@ -243,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				325484B01E2F5D7F00043725 /* 通用图标.jpg */,
+				3209095D1FE206540076EEF2 /* 多线程 */,
 				32CDA47A1FD62C7000BC1A08 /* 地图 */,
 				32C679AB1FC268C100A99FF0 /* 容器类 */,
 				32C679A31FBD84A900A99FF0 /* 网络 */,
@@ -474,6 +485,7 @@
 				328551BF1F55380B00D48E86 /* emController.swift in Sources */,
 				325484B51E2F5F4100043725 /* scrollVC.swift in Sources */,
 				325484A11E2C5E9100043725 /* kvoBlickedVC.swift in Sources */,
+				3209095F1FE2092F0076EEF2 /* AsyncViewController.swift in Sources */,
 				32C679A81FBD85CD00A99FF0 /* HttpManager.swift in Sources */,
 				32C679A51FBD84D200A99FF0 /* HttpViewController.swift in Sources */,
 				32AF98CF1E135A0F00602DF6 /* AppDelegate.swift in Sources */,
