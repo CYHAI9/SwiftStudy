@@ -37,6 +37,7 @@
 		32C679A81FBD85CD00A99FF0 /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C679A71FBD85CD00A99FF0 /* HttpManager.swift */; };
 		32C679AA1FBEC84100A99FF0 /* Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C679A91FBEC84100A99FF0 /* Params.swift */; };
 		32C679AD1FC2692B00A99FF0 /* NSContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C679AC1FC2692B00A99FF0 /* NSContainerViewController.swift */; };
+		32CD92D02005F586009B93EA /* AutoLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CD92CF2005F586009B93EA /* AutoLayoutController.swift */; };
 		32CDA47E1FD62CC500BC1A08 /* BaseMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CDA47D1FD62CC500BC1A08 /* BaseMapViewController.swift */; };
 		32E19CE91E15127700B77504 /* FoWhileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E19CE81E15127700B77504 /* FoWhileVC.swift */; };
 		84632F4E07E939418BCD51A0 /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A57A555ECA0E844E4362E3D /* Pods_SwiftStudy.framework */; };
@@ -76,6 +77,7 @@
 		32C679A71FBD85CD00A99FF0 /* HttpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
 		32C679A91FBEC84100A99FF0 /* Params.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Params.swift; sourceTree = "<group>"; };
 		32C679AC1FC2692B00A99FF0 /* NSContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSContainerViewController.swift; sourceTree = "<group>"; };
+		32CD92CF2005F586009B93EA /* AutoLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutController.swift; sourceTree = "<group>"; };
 		32CDA47D1FD62CC500BC1A08 /* BaseMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMapViewController.swift; sourceTree = "<group>"; };
 		32E19CE81E15127700B77504 /* FoWhileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoWhileVC.swift; sourceTree = "<group>"; };
 		5A57A555ECA0E844E4362E3D /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -253,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				325484B01E2F5D7F00043725 /* 通用图标.jpg */,
+				32CD92CE2005F529009B93EA /* 自动布局 */,
 				3209095D1FE206540076EEF2 /* 多线程 */,
 				32CDA47A1FD62C7000BC1A08 /* 地图 */,
 				32C679AB1FC268C100A99FF0 /* 容器类 */,
@@ -310,6 +313,14 @@
 				32C679AC1FC2692B00A99FF0 /* NSContainerViewController.swift */,
 			);
 			path = "容器类";
+			sourceTree = "<group>";
+		};
+		32CD92CE2005F529009B93EA /* 自动布局 */ = {
+			isa = PBXGroup;
+			children = (
+				32CD92CF2005F586009B93EA /* AutoLayoutController.swift */,
+			);
+			path = "自动布局";
 			sourceTree = "<group>";
 		};
 		32CDA47A1FD62C7000BC1A08 /* 地图 */ = {
@@ -436,10 +447,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -469,6 +482,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				325484AF1E2F545900043725 /* LBVC.swift in Sources */,
+				32CD92D02005F586009B93EA /* AutoLayoutController.swift in Sources */,
 				32C679AD1FC2692B00A99FF0 /* NSContainerViewController.swift in Sources */,
 				325484A31E2F435900043725 /* kvcPer.swift in Sources */,
 				32E19CE91E15127700B77504 /* FoWhileVC.swift in Sources */,

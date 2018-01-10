@@ -45,7 +45,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     func datasource() -> Void {
-        self.mydatasource = NSMutableArray.init(array: ["基础","运算符","监听与响应","协议与通知","控制流","函数","闭包","UI","枚举","网络请求","容器类","地图","多线程"])
+        self.mydatasource = NSMutableArray.init(array: ["基础","运算符","监听与响应","协议与通知","控制流","函数","闭包","UI","枚举","网络请求","容器类","地图","多线程","自动布局"])
     }
     
      func numberOfSections(in tableView: UITableView) -> Int {
@@ -73,15 +73,18 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         switch indexPath.row {
         case 0:
             let bvc = BaseVc()
+            bvc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(bvc, animated: true)
         break
         case 1:
             let cavc = calculationsVC()
+            cavc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(cavc, animated: true)
             
         break
         case 2:
             let kvc = kvoBlickedVC()
+            kvc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(kvc, animated: true)
             
         break
@@ -91,10 +94,12 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             let stru = protocol03()
             stru.protocol01(str:"结构体传入")
             print(protocol02)
+            pvc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(pvc, animated: true)
         break
         case 4:
             let fvc = FoWhileVC()
+            fvc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(fvc, animated: true)
             
         break
@@ -139,31 +144,42 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
                 print(str)
                 
             })
-            
+            blvc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(blvc, animated:true)
         break
         case 7:
             let uvc = UIVC()
+            uvc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(uvc, animated:true)
         break
         case 8:
             let uvc = emController()
+            uvc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(uvc, animated:true)
             break
         case 9:
             let uvc = HttpViewController()
+            uvc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(uvc, animated:true)
             break
         case 10:
             let uvc = NSContainerViewController()
+            uvc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(uvc, animated:true)
             break
         case 11:
             let uvc = BaseMapViewController()
+            uvc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(uvc, animated:true)
             break
         case 12:
             let uvc = AsyncViewController()
+            uvc.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(uvc, animated:true)
+            break
+        case 13:
+            let uvc = AutoLayoutController()
+            uvc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(uvc, animated:true)
             break
         default: break
