@@ -45,6 +45,7 @@ class BlockVC: UIViewController {
         self.block06("直接构建逃逸闭包")
         self.newTypeSetter = ["数组","属性","setter"]
         print(newTypeSetter[0])
+    
     }
 
     /// 定义带有固定封闭的block的函数

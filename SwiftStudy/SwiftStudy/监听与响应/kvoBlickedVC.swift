@@ -35,13 +35,13 @@ class kvoBlickedVC: UIViewController {
         self.kvoer?.addObserver(self, forKeyPath: "kvotest", options: .new, context:nil)
     }
 
-    func blicked(btn:UIButton) -> Void {
+    @objc func blicked(btn:UIButton) -> Void {
         print("swift是那么坑")
         kvoer?.setValue("哈哈哈哈哈哈哈", forKey: "kvotest")
         
     }
     
-    func tapGeBlicked(tap:UITapGestureRecognizer) -> Void {
+    @objc func tapGeBlicked(tap:UITapGestureRecognizer) -> Void {
         print("手势单击")
         kvoer?.setValue("哈哈哈哈哈哈", forKey: "kvotest")
     }
@@ -50,7 +50,7 @@ class kvoBlickedVC: UIViewController {
       
         if keyPath == "kvotest" {
             
-            print("kvo监听\(kvoer?.kvotest)")
+            print("kvo监听\(String(describing: kvoer?.kvotest))")
         }
         
         if (object as? kvcPer == kvoer) {

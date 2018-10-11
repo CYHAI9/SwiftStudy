@@ -78,13 +78,13 @@ class AsyncViewController: UIViewController {
         
     }
     
-    func ThreadDosmeThing(thread:Thread) -> Void {
+    @objc func ThreadDosmeThing(thread:Thread) -> Void {
         
         print("Thread线程==\(thread.value(forKey:"num")!)")
 
     }
     
-    func syncThreadDosomeThing() -> Void {
+    @objc func syncThreadDosomeThing() -> Void {
         lock.lock()
         print("同步Thread线程==\(num)")
         num+=1

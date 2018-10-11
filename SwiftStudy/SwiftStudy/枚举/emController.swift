@@ -34,7 +34,7 @@ class emController: UIViewController {
         self.view.addSubview(enumBtn);
         
     }
-    func enumBlicked(Btn:UIButton) -> Void {
+    @objc func enumBlicked(Btn:UIButton) -> Void {
         
         switch self.enumexample! {
         case enumStudy.enumone:

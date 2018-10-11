@@ -20,7 +20,7 @@ class calculationsVC: UIViewController {
 
     }
    //加减
-    func calculation01() -> Void {
+    @objc func calculation01() -> Void {
         let b = 10
         var a = 5
         a = b

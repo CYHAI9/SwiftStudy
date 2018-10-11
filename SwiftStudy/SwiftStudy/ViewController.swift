@@ -31,7 +31,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     /// 通知
     ///
     /// - Parameter notification: <#notification description#>
-    func test1(notification:NSNotification) -> Void {
+    @objc func test1(notification:NSNotification) -> Void {
         let userinfo = notification.userInfo as![String:AnyObject]
         
         print("这是个通知:",userinfo["通知"] as!String)
@@ -40,12 +40,10 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     deinit {
         
         NotificationCenter.default.removeObserver(self)
-        
-
     }
     
     func datasource() -> Void {
-        self.mydatasource = NSMutableArray.init(array: ["基础","运算符","监听与响应","协议与通知","控制流","函数","闭包","UI","枚举","网络请求","容器类","地图","多线程","自动布局"])
+        self.mydatasource = NSMutableArray.init(array: ["基础","运算符","监听与响应","协议与通知","控制流","函数","闭包","UI","枚举","网络请求","容器类","地图","多线程","自动布局","coreData"])
     }
     
      func numberOfSections(in tableView: UITableView) -> Int {
@@ -57,8 +55,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var mytableviewcell = tableView.dequeueReusableCell(withIdentifier:"cell01")
-        if (mytableviewcell == nil) {
+        var mytableviewcell = tableView.dequeueReusableCell(withIdentifier:"cellId")
+        if mytableviewcell == nil {
             
             mytableviewcell = UITableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: "cell01")
         }
@@ -179,6 +177,11 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             break
         case 13:
             let uvc = AutoLayoutController()
+            uvc.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(uvc, animated:true)
+            break
+        case 14:
+            let uvc = CoreDataController()
             uvc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(uvc, animated:true)
             break

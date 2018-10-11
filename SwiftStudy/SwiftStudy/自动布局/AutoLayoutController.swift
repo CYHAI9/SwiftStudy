@@ -15,7 +15,6 @@ class AutoLayoutController: UIViewController {
     let view02 = UIView()
     let view03 = UIView()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         createUI()
@@ -45,6 +44,8 @@ class AutoLayoutController: UIViewController {
             make.bottom.right.equalTo(-10)
             make.top.equalTo(view02.snp.bottom).offset(10)
         }
+        
+        
         
     }
 

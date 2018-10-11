@@ -30,7 +30,7 @@ class LBVC: UIViewController {
         self.view.addSubview(Button01)
     }
     
-    func bBlicked(btn:UIButton) -> Void {
+    @objc func bBlicked(btn:UIButton) -> Void {
         
         print("按钮响应 ")
         

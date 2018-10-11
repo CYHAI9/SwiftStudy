@@ -33,6 +33,11 @@
 		32AF98D61E135A0F00602DF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32AF98D51E135A0F00602DF6 /* Assets.xcassets */; };
 		32AF98D91E135A0F00602DF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32AF98D71E135A0F00602DF6 /* LaunchScreen.storyboard */; };
 		32AF98E21E135A9500602DF6 /* BaseVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF98E11E135A9500602DF6 /* BaseVc.swift */; };
+		32C4847E216D899900362840 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C4847D216D899900362840 /* CoreDataController.swift */; };
+		32C48482216D8A9500362840 /* SwiftCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 32C48480216D8A9400362840 /* SwiftCoreDataModel.xcdatamodeld */; };
+		32C48485216D8E5700362840 /* CoredataTest+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C48483216D8E5700362840 /* CoredataTest+CoreDataClass.swift */; };
+		32C48486216D8E5700362840 /* CoredataTest+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C48484216D8E5700362840 /* CoredataTest+CoreDataProperties.swift */; };
+		32C48488216D8F2800362840 /* CoredataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C48487216D8F2800362840 /* CoredataManager.swift */; };
 		32C679A51FBD84D200A99FF0 /* HttpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C679A41FBD84D200A99FF0 /* HttpViewController.swift */; };
 		32C679A81FBD85CD00A99FF0 /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C679A71FBD85CD00A99FF0 /* HttpManager.swift */; };
 		32C679AA1FBEC84100A99FF0 /* Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C679A91FBEC84100A99FF0 /* Params.swift */; };
@@ -73,6 +78,11 @@
 		32AF98D81E135A0F00602DF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32AF98DA1E135A0F00602DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32AF98E11E135A9500602DF6 /* BaseVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVc.swift; sourceTree = "<group>"; };
+		32C4847D216D899900362840 /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
+		32C48481216D8A9400362840 /* SwiftCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		32C48483216D8E5700362840 /* CoredataTest+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoredataTest+CoreDataClass.swift"; sourceTree = "<group>"; };
+		32C48484216D8E5700362840 /* CoredataTest+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoredataTest+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		32C48487216D8F2800362840 /* CoredataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataManager.swift; sourceTree = "<group>"; };
 		32C679A41FBD84D200A99FF0 /* HttpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpViewController.swift; sourceTree = "<group>"; };
 		32C679A71FBD85CD00A99FF0 /* HttpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
 		32C679A91FBEC84100A99FF0 /* Params.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Params.swift; sourceTree = "<group>"; };
@@ -255,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				325484B01E2F5D7F00043725 /* 通用图标.jpg */,
+				32C4847C216D897000362840 /* coreData */,
 				32CD92CE2005F529009B93EA /* 自动布局 */,
 				3209095D1FE206540076EEF2 /* 多线程 */,
 				32CDA47A1FD62C7000BC1A08 /* 地图 */,
@@ -287,6 +298,26 @@
 				32AF98E11E135A9500602DF6 /* BaseVc.swift */,
 			);
 			path = "基础";
+			sourceTree = "<group>";
+		};
+		32C4847C216D897000362840 /* coreData */ = {
+			isa = PBXGroup;
+			children = (
+				32C4847F216D89B200362840 /* coredataManager */,
+				32C48483216D8E5700362840 /* CoredataTest+CoreDataClass.swift */,
+				32C48484216D8E5700362840 /* CoredataTest+CoreDataProperties.swift */,
+				32C4847D216D899900362840 /* CoreDataController.swift */,
+				32C48480216D8A9400362840 /* SwiftCoreDataModel.xcdatamodeld */,
+			);
+			path = coreData;
+			sourceTree = "<group>";
+		};
+		32C4847F216D89B200362840 /* coredataManager */ = {
+			isa = PBXGroup;
+			children = (
+				32C48487216D8F2800362840 /* CoredataManager.swift */,
+			);
+			path = coredataManager;
 			sourceTree = "<group>";
 		};
 		32C679A31FBD84A900A99FF0 /* 网络 */ = {
@@ -383,7 +414,7 @@
 				TargetAttributes = {
 					32AF98CA1E135A0F00602DF6 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = X2V7RGB29W;
+						DevelopmentTeam = V9VJ5EQA22;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -483,7 +514,10 @@
 			files = (
 				325484AF1E2F545900043725 /* LBVC.swift in Sources */,
 				32CD92D02005F586009B93EA /* AutoLayoutController.swift in Sources */,
+				32C48488216D8F2800362840 /* CoredataManager.swift in Sources */,
+				32C4847E216D899900362840 /* CoreDataController.swift in Sources */,
 				32C679AD1FC2692B00A99FF0 /* NSContainerViewController.swift in Sources */,
+				32C48485216D8E5700362840 /* CoredataTest+CoreDataClass.swift in Sources */,
 				325484A31E2F435900043725 /* kvcPer.swift in Sources */,
 				32E19CE91E15127700B77504 /* FoWhileVC.swift in Sources */,
 				32C679AA1FBEC84100A99FF0 /* Params.swift in Sources */,
@@ -491,6 +525,8 @@
 				328551C31F56874200D48E86 /* ViewController02.swift in Sources */,
 				325484B71E30558A00043725 /* tableviewVC.swift in Sources */,
 				32AF98D11E135A0F00602DF6 /* ViewController.swift in Sources */,
+				32C48486216D8E5700362840 /* CoredataTest+CoreDataProperties.swift in Sources */,
+				32C48482216D8A9500362840 /* SwiftCoreDataModel.xcdatamodeld in Sources */,
 				328551B71F5501D200D48E86 /* CollectionviewController.swift in Sources */,
 				32AF98E21E135A9500602DF6 /* BaseVc.swift in Sources */,
 				32A971681E13A70D006D1E51 /* calculationsVC.swift in Sources */,
@@ -633,13 +669,13 @@
 			baseConfigurationReference = 2FA66344CC4E5172EC316478 /* Pods-SwiftStudy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = X2V7RGB29W;
+				DEVELOPMENT_TEAM = V9VJ5EQA22;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = SwiftStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Cyhai.SwiftStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -648,13 +684,13 @@
 			baseConfigurationReference = A0BEA5711B01AAD5A066B557 /* Pods-SwiftStudy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = X2V7RGB29W;
+				DEVELOPMENT_TEAM = V9VJ5EQA22;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = SwiftStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Cyhai.SwiftStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -680,6 +716,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		32C48480216D8A9400362840 /* SwiftCoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				32C48481216D8A9400362840 /* SwiftCoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 32C48481216D8A9400362840 /* SwiftCoreDataModel.xcdatamodel */;
+			path = SwiftCoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 32AF98C31E135A0F00602DF6 /* Project object */;
 }

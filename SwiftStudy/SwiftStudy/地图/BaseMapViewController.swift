@@ -115,7 +115,7 @@ class BaseMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
     }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-        print("某一天，我开始\(view.annotation?.title)\(view.annotation?.coordinate)")
+        print("某一天，我开始\(String(describing: view.annotation?.title))\(String(describing: view.annotation?.coordinate))")
         
         let action = UIAlertAction.init(title: "删除", style:.default) { (alAction) in
         
@@ -157,7 +157,7 @@ class BaseMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
         self.baseMapView.addGestureRecognizer(longPress)
         
     }
-    func longPressAddAn(Press:UILongPressGestureRecognizer) -> Void {
+    @objc func longPressAddAn(Press:UILongPressGestureRecognizer) -> Void {
         
         if (Press.state == .began) {
 
