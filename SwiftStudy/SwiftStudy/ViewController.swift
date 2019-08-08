@@ -19,7 +19,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
         self.datasource()
         //初始化一个tableview，分类方便调试
-        self.Mytableview = UITableView(frame: self.view.frame, style: UITableViewStyle.plain)
+        self.Mytableview = UITableView(frame: self.view.frame, style: UITableView.Style.plain)
         self.Mytableview.delegate = self
         self.Mytableview.dataSource = self;
         self.view.addSubview(self.Mytableview);
@@ -58,7 +58,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         var mytableviewcell = tableView.dequeueReusableCell(withIdentifier:"cellId")
         if mytableviewcell == nil {
             
-            mytableviewcell = UITableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: "cell01")
+            mytableviewcell = UITableViewCell.init(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell01")
         }
         
         mytableviewcell?.textLabel?.text = self.mydatasource[indexPath.row]as?String//用问号表示可能为空，不过能到这里一般不会出现这种情况，Label.text属性要求，更严谨些

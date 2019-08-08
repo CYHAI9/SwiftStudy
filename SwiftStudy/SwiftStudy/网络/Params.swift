@@ -15,3 +15,8 @@ class Params: NSObject {
     var areaID:String?
     
 }
+
+class VaporParam: NSObject {
+    var name:String?
+    var email:String?
+}

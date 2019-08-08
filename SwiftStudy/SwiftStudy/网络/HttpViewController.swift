@@ -38,10 +38,10 @@ class HttpViewController: UIViewController {
         } else if(run == 0)
         {
             AlamofireHttp()
-
             
         }else
         {
+            testVapor()
         }
         
         
@@ -58,6 +58,19 @@ class HttpViewController: UIViewController {
         
 
 }
+    
+    func testVapor() -> Void {
+        let params = VaporParam()
+        params.name = "NNBB"
+        params.email = "12306@qq.com"
+        
+        Alamofire.request("http://localhost:8080/user", method: .get, parameters: ["name":params.name!,"email":params.email!], encoding:URLEncoding.default, headers:nil).responseJSON { (response) in
+            
+            print("第三方请求的返回数据",response);
+        }
+        
+        
+    }
     
 }
 

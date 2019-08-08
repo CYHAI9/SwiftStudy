@@ -23,7 +23,7 @@ class UIVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     }
     
     func createrUI() -> Void {
-        self.uitableview = UITableView.init(frame: self.view.frame, style: UITableViewStyle.plain)
+        self.uitableview = UITableView.init(frame: self.view.frame, style: UITableView.Style.plain)
         self.uitableview.delegate = self;
         self.uitableview.dataSource = self;
         self.view.addSubview(self.uitableview);

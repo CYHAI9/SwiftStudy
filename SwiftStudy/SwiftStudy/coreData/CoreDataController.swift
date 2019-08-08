@@ -74,12 +74,13 @@ class CoreDataController: UIViewController {
             }
             break;
         case 12:
-            
+            //删除数据
             CoredataManager.manager.deleDataWithClassName(className: "CoredataTest", whereString: "name = 'join' and age = 30") { (model) in
                 
             }
             break;
         case 13:
+            //更新数据
             CoredataManager.manager.updateDataWithClassName(className: "CoredataTest", whereString: "name = 'join' and age = 30") { (Datas) in
                 
                 let arr:Array = Datas as! Array<Any>
@@ -94,9 +95,6 @@ class CoreDataController: UIViewController {
         }
        
     }
-
-    
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

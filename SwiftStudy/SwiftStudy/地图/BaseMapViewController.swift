@@ -37,8 +37,8 @@ class BaseMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
         cllocationManager.startUpdatingLocation()
         cllocationManager.requestWhenInUseAuthorization()
         
-        let span = MKCoordinateSpanMake(0, 0);
-        self.baseMapView.setRegion(MKCoordinateRegionMake(baseMapView.userLocation.coordinate, span), animated: true)
+        let span = MKCoordinateSpan(latitudeDelta: 0, longitudeDelta: 0);
+        self.baseMapView.setRegion(MKCoordinateRegion(center: baseMapView.userLocation.coordinate, span: span), animated: true)
         addAnnotation()
     }
     func mapViewDidFinishLoadingMap(_ mapView: MKMapView) {
@@ -136,7 +136,7 @@ class BaseMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
         }
     }
 
-    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, didChange newState: MKAnnotationViewDragState, fromOldState oldState: MKAnnotationViewDragState) {
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, didChange newState: MKAnnotationView.DragState, fromOldState oldState: MKAnnotationView.DragState) {
 //        print("某一天，我开始")
 
     }

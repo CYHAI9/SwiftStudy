@@ -16,7 +16,7 @@ class collectionLayout: UICollectionViewFlowLayout {
             self.minimumLineSpacing = minlineSP
             self.minimumInteritemSpacing = mininterSP
             self.sectionInset = _sectionInset
-            self.scrollDirection = UICollectionViewScrollDirection.vertical
+            self.scrollDirection = UICollectionView.ScrollDirection.vertical
             
         }
         

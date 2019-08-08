@@ -70,11 +70,11 @@ class tableviewVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
             
             print("删除操作")
             self.rowNum -= 1
-            self.tableview01.deleteRows(at:[indexPath], with: UITableViewRowAnimation.left)
+            self.tableview01.deleteRows(at:[indexPath], with: UITableView.RowAnimation.left)
         })
         action2 = UITableViewRowAction.init(style:.normal, title: "增加", handler: { (Taction, index) in
             self.rowNum += 1
-            self.tableview01.insertRows(at:[indexPath], with: UITableViewRowAnimation.right)
+            self.tableview01.insertRows(at:[indexPath], with: UITableView.RowAnimation.right)
             print("添加操作")
         })
         return [action1,action2]

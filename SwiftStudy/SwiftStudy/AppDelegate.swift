@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
@@ -28,8 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let nvc02 = UINavigationController.init(rootViewController: vc02)
         
         let tabbar:TabBarController = TabBarController()
-        tabbar.addChildViewController(nvc)
-        tabbar.addChildViewController(nvc02)
+        tabbar.addChild(nvc)
+        tabbar.addChild(nvc02)
         
         nvc.tabBarItem.title = "第一个"
         nvc02.tabBarItem.title = "第二个"

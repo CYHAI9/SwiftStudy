@@ -21,7 +21,7 @@ class CollectionviewController: UIViewController,UICollectionViewDelegate,UIColl
     
     func createrUI() -> Void {
     
-        let insets:UIEdgeInsets = UIEdgeInsetsMake(10, 5, 10, 5)
+        let insets:UIEdgeInsets = UIEdgeInsets(top: 10, left: 5, bottom: 10, right: 5)
         let Itemsize:CGSize = CGSize(width:180,height:250)
         
         let layout:collectionLayout = collectionLayout().initcollectionlayout(itemSize: Itemsize, minlineSP: 5, mininterSP: 5, _sectionInset:insets)
