@@ -14,6 +14,8 @@ class AutoLayoutController: UIViewController {
     let view01 = UIView()
     let view02 = UIView()
     let view03 = UIView()
+    var view04:UIView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,7 @@ class AutoLayoutController: UIViewController {
     }
 
     func createUI() -> Void {
+        
         view01.backgroundColor = UIColor.orange
         view02.backgroundColor = UIColor.red
         view03.backgroundColor = UIColor.yellow
@@ -44,8 +47,6 @@ class AutoLayoutController: UIViewController {
             make.bottom.right.equalTo(-10)
             make.top.equalTo(view02.snp.bottom).offset(10)
         }
-        
-        
         
     }
 

@@ -18,6 +18,8 @@
 		325484B51E2F5F4100043725 /* scrollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325484B41E2F5F4100043725 /* scrollVC.swift */; };
 		325484B71E30558A00043725 /* tableviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325484B61E30558A00043725 /* tableviewVC.swift */; };
 		325484BA1E305B4700043725 /* Cell01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325484B91E305B4700043725 /* Cell01.swift */; };
+		326A089622FC0F8E00305055 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326A089522FC0F8E00305055 /* VideoController.swift */; };
+		326A089822FC200A00305055 /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 326A089722FC200900305055 /* test.mp4 */; };
 		328551B71F5501D200D48E86 /* CollectionviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328551B61F5501D200D48E86 /* CollectionviewController.swift */; };
 		328551BA1F5502CE00D48E86 /* collectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328551B91F5502CE00D48E86 /* collectionLayout.swift */; };
 		328551BC1F5506D700D48E86 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328551BB1F5506D700D48E86 /* CollectionViewCell.swift */; };
@@ -61,6 +63,8 @@
 		325484B41E2F5F4100043725 /* scrollVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = scrollVC.swift; sourceTree = "<group>"; };
 		325484B61E30558A00043725 /* tableviewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableviewVC.swift; sourceTree = "<group>"; };
 		325484B91E305B4700043725 /* Cell01.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell01.swift; sourceTree = "<group>"; };
+		326A089522FC0F8E00305055 /* VideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
+		326A089722FC200900305055 /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
 		328551B61F5501D200D48E86 /* CollectionviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionviewController.swift; sourceTree = "<group>"; };
 		328551B91F5502CE00D48E86 /* collectionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = collectionLayout.swift; sourceTree = "<group>"; };
 		328551BB1F5506D700D48E86 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -193,6 +197,15 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		326A089422FC0F6800305055 /* 视频 */ = {
+			isa = PBXGroup;
+			children = (
+				326A089722FC200900305055 /* test.mp4 */,
+				326A089522FC0F8E00305055 /* VideoController.swift */,
+			);
+			path = "视频";
+			sourceTree = "<group>";
+		};
 		328551B51F5501AC00D48E86 /* Collectionview */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +277,7 @@
 		32AF98CD1E135A0F00602DF6 /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				326A089422FC0F6800305055 /* 视频 */,
 				325484B01E2F5D7F00043725 /* 通用图标.jpg */,
 				32C4847C216D897000362840 /* coreData */,
 				32CD92CE2005F529009B93EA /* 自动布局 */,
@@ -445,6 +459,7 @@
 				32AF98D91E135A0F00602DF6 /* LaunchScreen.storyboard in Resources */,
 				32AF98D61E135A0F00602DF6 /* Assets.xcassets in Resources */,
 				325484B11E2F5D7F00043725 /* 通用图标.jpg in Resources */,
+				326A089822FC200A00305055 /* test.mp4 in Resources */,
 				32AF98D41E135A0F00602DF6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,6 +532,7 @@
 				32A971681E13A70D006D1E51 /* calculationsVC.swift in Sources */,
 				325484BA1E305B4700043725 /* Cell01.swift in Sources */,
 				328551BC1F5506D700D48E86 /* CollectionViewCell.swift in Sources */,
+				326A089622FC0F8E00305055 /* VideoController.swift in Sources */,
 				328551BF1F55380B00D48E86 /* emController.swift in Sources */,
 				325484B51E2F5F4100043725 /* scrollVC.swift in Sources */,
 				325484A11E2C5E9100043725 /* kvoBlickedVC.swift in Sources */,

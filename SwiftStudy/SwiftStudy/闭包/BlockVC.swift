@@ -4,7 +4,6 @@
 //
 //  Created by 陈海哥 on 2016/12/28.
 //  Copyright © 2016年 陈海哥. All rights reserved.
-//
 
 import UIKit
 
@@ -29,8 +28,6 @@ class BlockVC: UIViewController {
        //TODO:Do something
     }
     
-    
-    
     var block03:(String)->Void = myblock
     var block05:(String)->Void = myblock
     //TODO:直接构建方式
@@ -49,10 +46,9 @@ class BlockVC: UIViewController {
     }
 
     /// 定义带有固定封闭的block的函数
-    ///
     /// - Parameters:
-    ///   - str: 传入值
-    ///   - block: block
+    /// - str: 传入值
+    /// - block: block
     func block01(str:String,block:(String) -> Void) ->Void {
  
         print(str)
@@ -61,10 +57,9 @@ class BlockVC: UIViewController {
     }
     
     /// 定义可以逃逸闭包的block的函数
-    ///
     /// - Parameters:
-    ///   - str: 传入值
-    ///   - block: block
+    /// - str: 传入值
+    /// - block: block
     func block04(str:String,block:@escaping(String)-> Void) -> Void {
         
         print(str)

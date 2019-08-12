@@ -24,11 +24,8 @@ class FoWhileVC: UIViewController {
         let arr = ["01","02","03","04","05"]
         
         for  str:String in arr {
-            
             print("for循环：\(str)")
-            
         }
-        
     }
     func forTest02() -> Void {
        
@@ -36,8 +33,7 @@ class FoWhileVC: UIViewController {
             
             print("循环循序：",i)
         }
-        
-        
+     
     }
     func whileTest01() -> Void {
         
