@@ -43,8 +43,9 @@ class UIVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
             uicell = UITableViewCell.init(style: .default, reuseIdentifier: "uicell")
             uicell?.textLabel?.text = self.datasource[indexPath.row]as? String
         }
-       
-        return uicell!;
+        
+        return uicell!
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

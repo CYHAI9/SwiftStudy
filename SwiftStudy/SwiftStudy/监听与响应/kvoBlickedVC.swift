@@ -12,9 +12,7 @@ class kvoBlickedVC: UIViewController {
     var btn01:UIButton?
     var tapGeview:UIView?
     var kvoer:kvcPer?
-   
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,36 +30,31 @@ class kvoBlickedVC: UIViewController {
         self.tapGeview?.backgroundColor = UIColor.orange
         self.view.addSubview(self.tapGeview!)
         self.kvoer = kvcPer();
-        self.kvoer?.addObserver(self, forKeyPath: "kvotest", options: .new, context:nil)
+        self.kvoer?.addObserver(self, forKeyPath:"kvotest", options: .new, context:nil)
     }
 
     @objc func blicked(btn:UIButton) -> Void {
         print("swift是那么坑")
-        kvoer?.setValue("哈哈哈哈哈哈哈", forKey: "kvotest")
-        
+        self.kvoer?.setValue("黑色按钮响应监听", forKey: "kvotest")
     }
     
     @objc func tapGeBlicked(tap:UITapGestureRecognizer) -> Void {
         print("手势单击")
-        kvoer?.setValue("哈哈哈哈哈哈", forKey: "kvotest")
+        kvoer?.setValue("手势单击响应监听", forKeyPath: "kvotest")
+       
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
       
         if keyPath == "kvotest" {
-            
             print("kvo监听\(String(describing: kvoer?.kvotest))")
         }
         
         if (object as? kvcPer == kvoer) {
-            
             print("kvo监听xxxxxxx")
-            
         } else {
             
-            
         }
-       
         
     }
     //等同于dealloc

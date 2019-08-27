@@ -17,9 +17,10 @@ class FoWhileVC: UIViewController {
         self.forTest02()
         self.whileTest01()
         self.forAndenumTest02()
+        switchTest(index: 200)
     }
 
-    func forTest01() -> Void {
+    func forTest02() -> Void {
         
         let arr = ["01","02","03","04","05"]
         
@@ -27,13 +28,14 @@ class FoWhileVC: UIViewController {
             print("for循环：\(str)")
         }
     }
-    func forTest02() -> Void {
+    func forTest01() -> Void {
        
         for i in (0...10).reversed() {
             
             print("循环循序：",i)
         }
-     
+        
+        
     }
     func whileTest01() -> Void {
         
@@ -47,8 +49,37 @@ class FoWhileVC: UIViewController {
     
     func forAndenumTest02() -> Void {
         let arr = ["字符串01","字符串02","字符串03","字符串04"];
-        for (index,str) in arr.enumerated() {
+        for (index,str) in arr.enumerated().reversed() {
             print("下标：\(index)----元素：\(str)")
         }
     }
+    
+    func ifTest(istrue:Bool) -> Void {
+        
+        if istrue == true {
+            print("这是真")
+        }
+        else
+        {
+            print("这是假")
+        }
+        
+    }
+    
+    func switchTest(index:NSInteger) -> Void {
+        
+        switch index {
+        case 100:
+            let newIndex = index + 1;
+            print("新下标:",newIndex)
+            break;
+        case 200:
+            let newIndex = index + 1;
+            print("新下标2:",newIndex)
+            break;
+        default:
+            break;
+        }
+    }
 }
+

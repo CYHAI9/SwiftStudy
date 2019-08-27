@@ -14,7 +14,7 @@ class tableviewVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    self.createrUI()
+        self.createrUI()
     }
     
     func createrUI() -> Void {

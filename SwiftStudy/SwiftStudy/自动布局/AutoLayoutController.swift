@@ -16,7 +16,6 @@ class AutoLayoutController: UIViewController {
     let view03 = UIView()
     var view04:UIView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         createUI()

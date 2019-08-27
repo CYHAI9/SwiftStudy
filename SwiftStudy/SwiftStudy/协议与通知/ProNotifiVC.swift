@@ -37,10 +37,7 @@ class ProNotifiVC: UIViewController {
     func test01() -> Void {
         
        self.testdelegate?.protocol01(str: "这个是协议方法")
-        
         NotificationCenter.default.post(name: NSNotification.Name("test1"), object: self, userInfo:["通知":"通知传值"])
-
     }
-    
     
 }

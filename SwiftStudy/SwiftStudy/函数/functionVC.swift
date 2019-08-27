@@ -29,7 +29,6 @@ class functionVC: UIViewController {
         return str
     }
     
-    
    class func function02() -> Void {
     
         print("这是类函数")

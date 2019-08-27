@@ -9,6 +9,7 @@
 import UIKit
 
 class kvcPer: NSObject {
-    var kvotest:String?
+   
+   @objc var kvotest:String?
     
 }

@@ -16,6 +16,18 @@ class BaseVc: UIViewController {
         self.base01()
         self.base02()
         self.base03()
+        self.baseParam(str: "参数param")
+        print(self.baseReturn())
+    }
+    
+    func baseParam(str:String) -> Void {
+        
+        print("传入参数:",str)
+    }
+    
+    func baseReturn() -> String {
+        
+        return "返回一个字符串"
     }
     
     /// 声明常量和变量
@@ -32,7 +44,6 @@ class BaseVc: UIViewController {
         varValue1  = varValue1 + 1;
         varValue2.append("哈哈哈哈哈")
         varValue3 = false
-        
         print("变量1：\(varValue1)\n变量2：\(varValue2)\n变量3：\(varValue3)")
         
     }
@@ -47,7 +58,6 @@ class BaseVc: UIViewController {
         let 奶牛:NSString
         奶牛 = "牛奶"
         let 😂 = "😂😂"
-        
         print("变量2-1：\(varValue1)\n变量2-2：\(varValue2)\n常量2-1：\(奶牛)\n常量2-2：\(😂)")
         
     }
@@ -62,7 +72,7 @@ class BaseVc: UIViewController {
         //其他类型转字符串
         let numstr = String(format:"第一种%lf",Dvalue)
         let numstr02 =  "\(Dvalue)\(valuestr)"
-        
+    
         print("转字符串01:",numstr)
         print("转字符串02",numstr02)
         print("double类型：\(Dvalue02)\n字符串转Int：\(valueNum)")
