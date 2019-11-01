@@ -43,7 +43,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     func datasource() -> Void {
-        self.mydatasource = NSMutableArray.init(array: ["基础","运算符","监听与响应","协议与通知","控制流","函数","闭包","UI","枚举","网络请求","容器类","地图","多线程","自动布局","coreData"])
+        self.mydatasource = NSMutableArray.init(array: ["基础","运算符","监听与响应","协议与通知","控制流","函数","闭包","UI","枚举","网络请求","容器类","地图","多线程","自动布局","coreData","Json"])
     }
     
      func numberOfSections(in tableView: UITableView) -> Int {
@@ -185,6 +185,10 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             uvc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(uvc, animated:true)
             break
+        case 15:
+            let jvc = JsonViewController()
+            jvc.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(jvc, animated:true)
         default: break
             
         }

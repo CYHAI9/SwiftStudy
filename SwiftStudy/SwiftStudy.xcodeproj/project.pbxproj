@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3209095F1FE2092F0076EEF2 /* AsyncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3209095E1FE2092F0076EEF2 /* AsyncViewController.swift */; };
+		3242DBCC236C604B00026FB5 /* JsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3242DBCB236C604B00026FB5 /* JsonViewController.swift */; };
+		3242DBCE236C789A00026FB5 /* JsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3242DBCD236C789A00026FB5 /* JsonModel.swift */; };
 		325484A11E2C5E9100043725 /* kvoBlickedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325484A01E2C5E9100043725 /* kvoBlickedVC.swift */; };
 		325484A31E2F435900043725 /* kvcPer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325484A21E2F435900043725 /* kvcPer.swift */; };
 		325484A61E2F499700043725 /* functionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325484A51E2F499700043725 /* functionVC.swift */; };
@@ -53,6 +55,8 @@
 /* Begin PBXFileReference section */
 		2FA66344CC4E5172EC316478 /* Pods-SwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		3209095E1FE2092F0076EEF2 /* AsyncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncViewController.swift; sourceTree = "<group>"; };
+		3242DBCB236C604B00026FB5 /* JsonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonViewController.swift; sourceTree = "<group>"; };
+		3242DBCD236C789A00026FB5 /* JsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonModel.swift; sourceTree = "<group>"; };
 		325484A01E2C5E9100043725 /* kvoBlickedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kvoBlickedVC.swift; sourceTree = "<group>"; };
 		325484A21E2F435900043725 /* kvcPer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kvcPer.swift; sourceTree = "<group>"; };
 		325484A51E2F499700043725 /* functionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = functionVC.swift; sourceTree = "<group>"; };
@@ -124,6 +128,15 @@
 				3209095E1FE2092F0076EEF2 /* AsyncViewController.swift */,
 			);
 			path = "多线程";
+			sourceTree = "<group>";
+		};
+		3242DBCA236C602100026FB5 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				3242DBCB236C604B00026FB5 /* JsonViewController.swift */,
+				3242DBCD236C789A00026FB5 /* JsonModel.swift */,
+			);
+			path = Json;
 			sourceTree = "<group>";
 		};
 		3254849F1E2C5E0B00043725 /* 监听与响应 */ = {
@@ -277,6 +290,7 @@
 		32AF98CD1E135A0F00602DF6 /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				3242DBCA236C602100026FB5 /* Json */,
 				326A089422FC0F6800305055 /* 视频 */,
 				325484B01E2F5D7F00043725 /* 通用图标.jpg */,
 				32C4847C216D897000362840 /* coreData */,
@@ -493,12 +507,16 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -525,6 +543,7 @@
 				328551C31F56874200D48E86 /* ViewController02.swift in Sources */,
 				325484B71E30558A00043725 /* tableviewVC.swift in Sources */,
 				32AF98D11E135A0F00602DF6 /* ViewController.swift in Sources */,
+				3242DBCE236C789A00026FB5 /* JsonModel.swift in Sources */,
 				32C48486216D8E5700362840 /* CoredataTest+CoreDataProperties.swift in Sources */,
 				32C48482216D8A9500362840 /* SwiftCoreDataModel.xcdatamodeld in Sources */,
 				328551B71F5501D200D48E86 /* CollectionviewController.swift in Sources */,
@@ -532,6 +551,7 @@
 				32A971681E13A70D006D1E51 /* calculationsVC.swift in Sources */,
 				325484BA1E305B4700043725 /* Cell01.swift in Sources */,
 				328551BC1F5506D700D48E86 /* CollectionViewCell.swift in Sources */,
+				3242DBCC236C604B00026FB5 /* JsonViewController.swift in Sources */,
 				326A089622FC0F8E00305055 /* VideoController.swift in Sources */,
 				328551BF1F55380B00D48E86 /* emController.swift in Sources */,
 				325484B51E2F5F4100043725 /* scrollVC.swift in Sources */,

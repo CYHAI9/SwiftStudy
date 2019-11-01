@@ -55,8 +55,6 @@ class HttpViewController: UIViewController {
             
             print("第三方请求的返回数据",response);
         }
-        
-
 }
     
     func testVapor() -> Void {
