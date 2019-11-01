@@ -15,6 +15,7 @@ class NSContainerViewController: UIViewController {
 
         ArraryClass()
         DictionaryClass()
+        setClass()
     }
     
     func ArraryClass() -> Void {
@@ -64,6 +65,20 @@ class NSContainerViewController: UIViewController {
         }
         
     }
+    
+    func setClass() -> Void {
+        var set = Set<String>()
+        set.insert("001")
+        set.insert("002")
+        print(set)
+        set.remove("001")
+        
+        print(set)
+    }
 
+//    func musetClass() -> Void {
+//        var set = NSMutableSet()
+//
+//    }
     
 }

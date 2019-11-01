@@ -11,6 +11,8 @@ import UIKit
 class LBVC: UIViewController {
     var label01 = UILabel()
     var Button01 = UIButton()
+    var view01:UIView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     self.createrUI()
@@ -27,7 +29,14 @@ class LBVC: UIViewController {
         self.Button01.backgroundColor = UIColor.black
         self.Button01.addTarget(self, action:#selector(bBlicked(btn:)), for: .touchUpInside)
         self.Button01.setTitle("按钮", for: .normal)
+        self.Button01.setImage(UIImage.init(named:""), for: .normal)
+        self.Button01.setBackgroundImage(UIImage.init(named: ""), for: .normal)
         self.view.addSubview(Button01)
+        
+        self.view01 = UIView.init(frame: CGRect(origin: CGPoint(x: 200, y: 300), size: CGSize(width: 100, height: 64)))
+        self.view01?.backgroundColor = UIColor.red
+        self.view01?.layer.cornerRadius = 5.0;
+        self.view.addSubview(view01!)
     }
     
     @objc func bBlicked(btn:UIButton) -> Void {

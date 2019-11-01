@@ -48,23 +48,6 @@ class tableviewVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         
         var action1:UITableViewRowAction
         var action2:UITableViewRowAction
-
-//        if (indexPath.row%2 == 0) {
-//            action = UITableViewRowAction.init(style: .default, title: "删除", handler: { (Taction, index) in
-//
-//                print("删除操作")
-//                self.rowNum -= 1
-//                self.tableview01.deleteRows(at:[indexPath], with: UITableViewRowAnimation.left)
-//            })
-//        }
-//        else
-//        {
-//            action = UITableViewRowAction.init(style:.normal, title: "增加", handler: { (Taction, index) in
-//                self.rowNum += 1
-//                self.tableview01.insertRows(at:[indexPath], with: UITableViewRowAnimation.right)
-//                print("添加操作")
-//            })
-//        }
         //TODO:以下是添加两个按钮在cell上
         action1 = UITableViewRowAction.init(style: .default, title: "删除", handler: { (Taction, index) in
             

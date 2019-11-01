@@ -19,8 +19,7 @@ class collectionLayout: UICollectionViewFlowLayout {
             self.scrollDirection = UICollectionView.ScrollDirection.vertical
             
         }
-        
-        
+ 
         return self
     }
     

@@ -18,8 +18,9 @@ class ImageVC: UIViewController {
     }
     
     func createrUI() -> Void {
-        self.imageview01 = UIImageView.init(frame: CGRect(origin:CGPoint(x:100,y:300),size:CGSize(width:200,height:200)))
+        self.imageview01 = UIImageView.init(frame: CGRect(origin:CGPoint(x:100,y:300),size:CGSize(width:200,height:400)))
         self.imageview01.image = UIImage.init(imageLiteralResourceName: "通用图标.jpg")
+        self.imageview01.contentMode = .scaleAspectFit
         self.view.addSubview(imageview01)
         
     }

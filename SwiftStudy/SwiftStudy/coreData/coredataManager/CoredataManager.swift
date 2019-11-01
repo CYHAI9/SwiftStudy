@@ -19,8 +19,7 @@ class CoredataManager: NSObject {
     private override init() {
         
     }
-   
-    
+  
     func createCoreData(coredataName:String) -> Void {
         
         self.psc = self.setStoreCoordinatorwithResourceName(name:coredataName)

@@ -16,12 +16,9 @@ class BlockVC: UIViewController {
     var newTypeSetter:[String]! {
 
         didSet {
-
             //TODO:Do something
         }
-
     }
-    
     /// 定义block属性的一种方法01：
     var block02 = {
         (str1:String,str2:String)in
