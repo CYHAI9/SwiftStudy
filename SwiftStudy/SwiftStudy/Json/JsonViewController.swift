@@ -26,9 +26,9 @@ class JsonViewController: UIViewController {
             let jsondata = JSON(response.data!)
             let model = JsonModel(jsonData: jsondata)
             
-//            for (index,subJson):(String, JSON) in jsondata["result"]["dayList"] {
+            for (index,subJson):(String, JSON) in jsondata["result"]["dayList"] {
             print("第三方请求的返回数据:",model.statusCode ?? "");
-//            }
+            }
             
             
         }
